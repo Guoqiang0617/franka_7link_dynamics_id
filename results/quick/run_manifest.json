@@ -1,0 +1,25 @@
+{
+  "completed_utc": "2026-11-01T11:56:32.260866+00:00",
+  "profile": "quick",
+  "quick_profile_is_workflow_check_only": true,
+  "python": "3.10.22 | packaged by conda-forge | (main, Oct  6 2026, 23:02:24) [GCC 14.4.0]",
+  "platform": "Linux-5.15.0-1032-realtime-x86_64-with-glibc2.35",
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.2",
+    "pandas": "2.3.3",
+    "cvxpy": "1.6.7",
+    "mujoco": "3.3.7"
+  },
+  "elapsed_seconds": 23.981573417000618,
+  "threads": 4,
+  "processed_data": "/home/guoqiang/franka_ros2_ws/franka_7link_dynamics_id/data/processed/quick",
+  "model_output": "/home/guoqiang/franka_ros2_ws/franka_7link_dynamics_id/results/quick/models",
+  "trajectory": "/home/guoqiang/franka_ros2_ws/franka_7link_dynamics_id/data/trajectories/test/trajectory_350_20260515_230214.json",
+  "experimental_csv": "/home/guoqiang/franka_ros2_ws/franka_7link_dynamics_id/data/raw/test/trajectory_350_20260515_230214.csv",
+  "input_checksums": {
+    "data/MANIFEST.csv": "2b8486fbc404e8c99c4f78add32aa02df42d1b02df2808c6aad1fbb8932001e9",
+    "config/fr3_model.yaml": "baee2f3ebc393ac468e47a6265a7ff6717a342fde880f286b87850135a1c95db",
+    "config/identification.yaml": "0e3d5d99f480f84e7278aec9ac504066c123ea03823a5c4f7893c1dd9c138487"
+  }
+}

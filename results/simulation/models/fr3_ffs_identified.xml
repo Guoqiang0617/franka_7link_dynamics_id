@@ -1,0 +1,58 @@
+<mujoco model="fr3_ffs_identified">
+  <compiler angle="radian" autolimits="true" balanceinertia="false"/>
+  <option timestep="0.001" gravity="0 0 -9.81" integrator="implicit" impratio="10"/>
+  <default>
+    <joint damping="0" frictionloss="0"/>
+    <geom contype="0" conaffinity="0" group="1" rgba="0.55 0.62 0.68 1"/>
+  </default>
+  <worldbody>
+    <light pos="0 0 3" dir="0 0 -1"/>
+    <body name="base">
+      <inertial pos="0 0 0" mass="0.1" diaginertia="0.001 0.001 0.001"/>
+      <body name="fr3_link1" pos="0 -0 0.333" quat="1 0 -0 0">
+        <joint name="joint1" type="hinge" axis="0 0 1" range="-2.9007 2.9007" armature="0.605721456"/>
+        <inertial pos="-2.57557231306e-10 -4.36259320248e-06 -0.0381502733247" mass="2.92750732243" fullinertia="0.0323557613317 0.0323557613317 2.0158628947e-06 -9.35434779786e-17 -3.06789857214e-10 -1.07882784533e-08"/>
+        <geom type="capsule" fromto="0 0 -0.04 0 0 0.04" size="0.035"/>
+      <body name="fr3_link2" pos="0 0 -0" quat="0.707106781187 -0.707106781187 0 0">
+        <joint name="joint2" type="hinge" axis="0 0 1" range="-1.8361 1.8361" armature="0.605721456"/>
+        <inertial pos="0.00271154521414 -0.0284848773572 -0.00242167723471" mass="9.51697813407" fullinertia="2.0150906564e-06 2.01209998802e-06 2.01093935342e-06 4.82763101738e-10 3.25777356927e-10 -6.07985567815e-10"/>
+        <geom type="capsule" fromto="0 0 -0.04 0 0 0.04" size="0.035"/>
+      <body name="fr3_link3" pos="0 -0.316 -1.20982770886e-16" quat="0.707106781187 0.707106781187 -0 0">
+        <joint name="joint3" type="hinge" axis="0 0 1" range="-2.9007 2.9007" armature="0.462474144"/>
+        <inertial pos="0.00168668153499 -0.00192887264552 -0.289614495642" mass="8.10947944557" fullinertia="2.09464479395e-06 2.09476780266e-06 2.00366711646e-06 4.41990650046e-11 2.6976361726e-09 -6.33852887712e-10"/>
+        <geom type="capsule" fromto="0 0 -0.04 0 0 0.04" size="0.035"/>
+      <body name="fr3_link4" pos="0.0825 -0 -0" quat="0.707106781187 0.707106781187 -0 0">
+        <joint name="joint4" type="hinge" axis="0 0 1" range="-3.077 -0.1169" armature="0.462474144"/>
+        <inertial pos="-0.0446574585138 0.178019052618 -0.00288914612397" mass="5.29529194029" fullinertia="2.0349278515e-06 2.00509254014e-06 2.03645952562e-06 7.55936408608e-09 -2.13734819123e-10 4.88548768281e-10"/>
+        <geom type="capsule" fromto="0 0 -0.04 0 0 0.04" size="0.035"/>
+      <body name="fr3_link5" pos="-0.0825 0.384 -1.47017038039e-16" quat="0.707106781187 -0.707106781187 0 0">
+        <joint name="joint5" type="hinge" axis="0 0 1" range="-2.8763 2.8763" armature="0.205544064"/>
+        <inertial pos="0.00316897715956 0.0370791385053 -0.217920253394" mass="2.11154245692" fullinertia="2.05160462961e-06 2.05025579891e-06 2.00409018793e-06 -5.57937673926e-11 5.41878698813e-10 8.14196255208e-09"/>
+        <geom type="capsule" fromto="0 0 -0.04 0 0 0.04" size="0.035"/>
+      <body name="fr3_link6" pos="0 -0 -0" quat="0.707106781187 0.707106781187 -0 0">
+        <joint name="joint6" type="hinge" axis="0 0 1" range="0.4398 4.6216" armature="0.205544064"/>
+        <inertial pos="0.12098557546 -0.0529287735382 -0.00621652132516" mass="1.30713886918" fullinertia="2.00476943859e-06 2.0164258003e-06 2.01843042821e-06 6.46936510265e-09 6.53889148773e-10 -2.99363053823e-10"/>
+        <geom type="capsule" fromto="0 0 -0.04 0 0 0.04" size="0.035"/>
+      <body name="fr3_link7" pos="0.088 -0 -0" quat="0.707106781187 0.707106781187 -0 0">
+        <joint name="joint7" type="hinge" axis="0 0 1" range="-3.0508 3.0508" armature="0.205544064"/>
+        <inertial pos="0.0383738964049 -0.000267358262483 0.0534789574648" mass="0.0586228285672" fullinertia="2.00417645436e-06 2.00596824326e-06 2.00316971594e-06 -2.91634564151e-10 -1.9973203604e-09 -6.72173050019e-12"/>
+        <geom type="capsule" fromto="0 0 -0.04 0 0 0.04" size="0.035"/>
+      </body>
+      </body>
+      </body>
+      </body>
+      </body>
+      </body>
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <motor name="motor1" joint="joint1" gear="1"/>
+    <motor name="motor2" joint="joint2" gear="1"/>
+    <motor name="motor3" joint="joint3" gear="1"/>
+    <motor name="motor4" joint="joint4" gear="1"/>
+    <motor name="motor5" joint="joint5" gear="1"/>
+    <motor name="motor6" joint="joint6" gear="1"/>
+    <motor name="motor7" joint="joint7" gear="1"/>
+  </actuator>
+</mujoco>

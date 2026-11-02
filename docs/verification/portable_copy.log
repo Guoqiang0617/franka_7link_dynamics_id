@@ -1,0 +1,97 @@
+Obtaining file:///tmp/franka%20%E4%BA%A4%E6%8E%A5%E6%B5%8B%E8%AF%95%20s7hfjwqv/franka%20%E9%A1%B9%E7%9B%AE%E5%89%AF%E6%9C%AC
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: franka-7link-dynamics-id
+  Building editable for franka-7link-dynamics-id (pyproject.toml): started
+  Building editable for franka-7link-dynamics-id (pyproject.toml): finished with status 'done'
+  Created wheel for franka-7link-dynamics-id: filename=franka_7link_dynamics_id-0.1.0-0.editable-py3-none-any.whl size=3114 sha256=7bce10a793d12567a7f83dd2d59e236466e715845a8a52e304d060182e3f025d
+  Stored in directory: /tmp/pip-ephem-wheel-cache-b2mjc6q2/wheels/02/b2/0d/2ddc0d0772e580a77387e1d22b96d75c1489df2aad1d2ac8ff
+Successfully built franka-7link-dynamics-id
+Installing collected packages: franka-7link-dynamics-id
+  Attempting uninstall: franka-7link-dynamics-id
+    Found existing installation: franka-7link-dynamics-id 0.1.0
+    Uninstalling franka-7link-dynamics-id-0.1.0:
+      Successfully uninstalled franka-7link-dynamics-id-0.1.0
+Successfully installed franka-7link-dynamics-id-0.1.0
+
+Running check_environment.py
+{
+  "python": "3.10.22 | packaged by conda-forge | (main, Oct  6 2026, 23:02:24) [GCC 14.4.0]",
+  "platform": "Linux-5.15.0-1032-realtime-x86_64-with-glibc2.35",
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.2",
+    "pandas": "2.3.3",
+    "yaml": "6.0.3",
+    "matplotlib": "3.10.9",
+    "pinocchio": "3.8.0",
+    "cvxpy": "1.6.7",
+    "mujoco": "3.3.7",
+    "franka_7link_dynamics_id": "0.1.0"
+  },
+  "success": true,
+  "failures": []
+}
+Environment and project files are ready.
+
+Running prepare_dataset.py
+trajectory_001.csv: 8398 raw -> 168 samples (median dt 1.001 ms)
+trajectory_002_20260514_174449.csv: 10484 raw -> 210 samples (median dt 0.999 ms)
+trajectory_003_20260514_174449.csv: 9210 raw -> 185 samples (median dt 1.006 ms)
+trajectory_004_20260514_174449.csv: 8540 raw -> 171 samples (median dt 1.020 ms)
+trajectory_005_20260514_174449.csv: 8995 raw -> 180 samples (median dt 1.009 ms)
+Saved 914 samples to /tmp/franka 交接测试 s7hfjwqv/franka 项目副本/data/processed/quick/train.npz
+trajectory_001_20260515_230214.csv: 9844 raw -> 197 samples (median dt 1.003 ms)
+trajectory_002_20260515_230214.csv: 5984 raw -> 120 samples (median dt 0.999 ms)
+trajectory_003_20260515_230214.csv: 10500 raw -> 210 samples (median dt 0.999 ms)
+trajectory_004_20260515_230214.csv: 10447 raw -> 209 samples (median dt 0.999 ms)
+trajectory_005_20260515_230214.csv: 10425 raw -> 209 samples (median dt 1.001 ms)
+Saved 945 samples to /tmp/franka 交接测试 s7hfjwqv/franka 项目副本/data/processed/quick/test.npz
+
+Running identify_parameters.py
+Building 84-parameter regressor for 914 samples.
+Regressor: 45/914 samples
+Regressor: 90/914 samples
+Regressor: 135/914 samples
+Regressor: 180/914 samples
+Regressor: 225/914 samples
+Regressor: 270/914 samples
+Regressor: 315/914 samples
+Regressor: 360/914 samples
+Regressor: 405/914 samples
+Regressor: 450/914 samples
+Regressor: 495/914 samples
+Regressor: 540/914 samples
+Regressor: 585/914 samples
+Regressor: 630/914 samples
+Regressor: 675/914 samples
+Regressor: 720/914 samples
+Regressor: 765/914 samples
+Regressor: 810/914 samples
+Regressor: 855/914 samples
+Regressor: 900/914 samples
+PC-IRLS 1/5: relative change=2.692e-01, RMSE=1.81243 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 2/5: relative change=8.890e-02, RMSE=1.76845 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 3/5: relative change=5.815e-02, RMSE=1.75334 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 4/5: relative change=3.056e-02, RMSE=1.74954 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 5/5: relative change=1.721e-02, RMSE=1.74862 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+Finished: rank 57/84, nullity 27, train RMSE 1.74862 Nm
+
+Running evaluate_parameters.py
+Evaluated 945/945 held-out samples
+full_dynamics: nominal 1.31806 Nm, identified 1.06727 Nm
+gravity_replaced: nominal 1.31806 Nm, identified 1.09470 Nm
+
+Running export_model.py
+Updated inertial elements in 7 links: /tmp/franka 交接测试 s7hfjwqv/franka 项目副本/results/quick/models/fr3_identified.urdf
+Generated: /tmp/franka 交接测试 s7hfjwqv/franka 项目副本/results/quick/models/fr3_ffs_nominal.xml
+Generated: /tmp/franka 交接测试 s7hfjwqv/franka 项目副本/results/quick/models/fr3_ffs_identified.xml
+
+Running run_ffs_simulation.py
+Updated inertial elements in 7 links: /tmp/franka 交接测试 s7hfjwqv/franka 项目副本/results/quick/simulation/models/fr3_identified.urdf
+Saved comparison figure: /tmp/franka 交接测试 s7hfjwqv/franka 项目副本/results/quick/simulation/ffs_simulation_comparison.png
+
+Completed quick pipeline in 13.0 s
+Open /tmp/franka 交接测试 s7hfjwqv/franka 项目副本/results/quick/RUN_REPORT.md

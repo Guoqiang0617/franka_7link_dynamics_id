@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "FR3: 快速跑通已有数据流程",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_pipeline.py",
+      "args": ["--profile", "quick"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "env": {"PYTHONNOUSERSITE": "1", "PYTHONUTF8": "1"},
+      "subProcess": true
+    },
+    {
+      "name": "FR3: 完整数据辨识与仿真",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_pipeline.py",
+      "args": ["--profile", "full"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "env": {"PYTHONNOUSERSITE": "1", "PYTHONUTF8": "1"},
+      "subProcess": true
+    }
+  ]
+}

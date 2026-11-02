@@ -1,0 +1,60 @@
+{
+  "original_result_directory": "ffs_data/src/franka_identification_controllers/mujoco_validation/results/ffs_simulation",
+  "original_generator": "src/franka_identification_controllers/mujoco_validation/scripts/5_ffs_simulation.py",
+  "trajectory_match": {
+    "file": "data/trajectories/test/trajectory_350_20260515_230214.json",
+    "max_abs_desired_position_difference_rad": 0.0
+  },
+  "files": [
+    {
+      "file": "error_zoom.png",
+      "sha256": "8bb105d998d17da9b85e1688d43341b8463de8e49b84839df6ef32989e6ca4c7",
+      "size_bytes": 247066
+    },
+    {
+      "file": "ffs_simulation_comparison.png",
+      "sha256": "0d4583c8f33c17a7c1e6062fed3105c1bd24f1ef257130537af36d4a61e1b3e0",
+      "size_bytes": 1169351
+    },
+    {
+      "file": "fr3_ffs_identified.xml",
+      "sha256": "8fa9f3186a3a40dc63aa80393f10edfc85209aa0827ad930fe6416dafa3a6876",
+      "size_bytes": 4633
+    },
+    {
+      "file": "fr3_ffs_nominal.xml",
+      "sha256": "97e40307bb75218306cd12eeeb454f9ec16b15c7989660ba1dd8a33fb67124d8",
+      "size_bytes": 4635
+    },
+    {
+      "file": "original_5_ffs_simulation.py",
+      "sha256": "0a8002b4b75db7c348c841ac5930971f17e1b079bc7798de510483bc00b00edb",
+      "size_bytes": 29716
+    },
+    {
+      "file": "original_pc_irls_improved.py",
+      "sha256": "d212c909ea8320f1696053484f2c80acb72b1c9237bab5b681313810242887b8",
+      "size_bytes": 46783
+    },
+    {
+      "file": "original_validate_identified_params.py",
+      "sha256": "f9d8c898b076d91354e888873d10b486937c4b3746994be8f1d572212a48a135",
+      "size_bytes": 16554
+    },
+    {
+      "file": "pc_irls_improved_params_simple.npz",
+      "sha256": "18a226bc879b81929ea85d464f0ea4fe36e4713a611d7144628e87d6256014c4",
+      "size_bytes": 5340
+    },
+    {
+      "file": "simulation_identified.npz",
+      "sha256": "58af300fbda5174212789601434bf4e69d8994267f030c1bdbe4bc0492967f07",
+      "size_bytes": 2881448
+    },
+    {
+      "file": "simulation_nominal.npz",
+      "sha256": "0e93424cc02cef5b3ef794d01d8ab583378d8444eb3c10969b49ea26c19682bc",
+      "size_bytes": 2881448
+    }
+  ]
+}

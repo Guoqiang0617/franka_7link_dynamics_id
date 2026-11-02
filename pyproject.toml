@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "franka-7link-dynamics-id"
+version = "0.1.0"
+description = "Portable FR3 seven-link rigid-body dynamics identification workflow"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "numpy>=2.1,<2.3",
+  "scipy>=1.15,<1.16",
+  "pandas>=2.2,<3",
+  "PyYAML>=6",
+  "matplotlib>=3.9,<4",
+  "mujoco==3.3.7",
+  "cvxpy>=1.6,<1.7",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["franka_7link_dynamics_id*"]
+exclude = ["tests*", "ros2_collector*"]

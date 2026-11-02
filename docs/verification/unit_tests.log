@@ -1,0 +1,20 @@
+test_csv_becomes_finite_seven_axis_samples (test_dataset.DatasetPreparationTests) ... ok
+test_empty_recording_is_reported_and_does_not_break_source_indices (test_dataset.DatasetPreparationTests) ... trajectory_001.csv: 301 raw -> 61 samples (median dt 2.000 ms)
+Saved 61 samples to /tmp/tmp288xm8_f/processed/train.npz
+Skipped trajectory_001.csv: only 0 samples
+ok
+test_parallel_axis_round_trip (test_inertial.InertialFrameTests) ... ok
+test_pseudo_inertia_parameter_round_trip (test_inertial.InertialFrameTests) ... ok
+test_urdf_and_mujoco_match_pinocchio_inverse_dynamics (test_model_consistency.ModelConsistencyTests) ... /tmp/franka_id_env/lib/python3.10/site-packages/hppfcl/__init__.py:3: DeprecationWarning: Please update your 'hppfcl' imports to 'coal'
+  warnings.warn(
+ok
+test_ffs_endpoints_and_shapes (test_trajectory.TrajectoryTests) ... ok
+test_generated_files_have_zero_endpoint_derivatives_and_obey_limits (test_trajectory_generation.TrajectoryGenerationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 2.430s
+
+OK
+trajectory_002.csv: 3 raw -> 1 samples (median dt 1.000 ms)
+Saved 1 samples to /tmp/tmpn3ptvcnz/prepared.npz
+Updated inertial elements in 7 links: /tmp/franka id g1_n5mam/identified.urdf

@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "command": "python tools/check_environment.py --verify-hashes",
+  "manifest_sha256": "2b8486fbc404e8c99c4f78add32aa02df42d1b02df2808c6aad1fbb8932001e9",
+  "file_count": 1791,
+  "bytes": 10394229778,
+  "verification": "all manifest file sizes and SHA-256 checked",
+  "failures": []
+}

@@ -1,0 +1,133 @@
+{
+  "trajectory": "/home/guoqiang/franka_ros2_ws/franka_7link_dynamics_id/data/trajectories/test/trajectory_350_20260515_230214.json",
+  "experimental_csv": "/home/guoqiang/franka_ros2_ws/franka_7link_dynamics_id/data/raw/test/trajectory_350_20260515_230214.csv",
+  "controller": {
+    "K": [
+      1500.0,
+      1500.0,
+      1500.0,
+      1500.0,
+      900.0,
+      720.0,
+      360.0
+    ],
+    "D": [
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      1.5,
+      1.5,
+      1.0
+    ],
+    "friction_tanh_width_rad_s": 0.4,
+    "timestep_s": 0.001,
+    "fixed_joint_armature_kg_m2": [
+      0.605721456,
+      0.605721456,
+      0.462474144,
+      0.462474144,
+      0.205544064,
+      0.205544064,
+      0.205544064
+    ],
+    "plant_friction": "opposing torque, matched by compensation in both models",
+    "bias_compensation": "each model's gravity plus Coriolis/centrifugal bias"
+  },
+  "tracking_rmse": {
+    "J1": {
+      "nominal_rmse_rad": 0.0006157577416433296,
+      "identified_rmse_rad": 0.0005086145229654276
+    },
+    "J2": {
+      "nominal_rmse_rad": 0.0010367789104546935,
+      "identified_rmse_rad": 0.0008231650278905286
+    },
+    "J3": {
+      "nominal_rmse_rad": 0.000857556638035522,
+      "identified_rmse_rad": 0.0008183867698866728
+    },
+    "J4": {
+      "nominal_rmse_rad": 0.0008944644821198079,
+      "identified_rmse_rad": 0.0007039227151476703
+    },
+    "J5": {
+      "nominal_rmse_rad": 0.00029511944114607273,
+      "identified_rmse_rad": 0.0002869714554652105
+    },
+    "J6": {
+      "nominal_rmse_rad": 0.0005228766153109834,
+      "identified_rmse_rad": 0.0005018675857589057
+    },
+    "J7": {
+      "nominal_rmse_rad": 0.0004151580154880144,
+      "identified_rmse_rad": 0.0004149265294619803
+    }
+  },
+  "models": {
+    "nominal": "/home/guoqiang/franka_ros2_ws/franka_7link_dynamics_id/results/quick/simulation/models/fr3_ffs_nominal.xml",
+    "identified": "/home/guoqiang/franka_ros2_ws/franka_7link_dynamics_id/results/quick/simulation/models/fr3_ffs_identified.xml"
+  },
+  "comparison_with_measured": {
+    "nominal": {
+      "overlap_sample_count": 10001,
+      "q_rmse_per_joint": [
+        0.0007694660696301058,
+        0.0010884730085223293,
+        0.0008633337642036169,
+        0.0009552633353519882,
+        0.0004486047857500888,
+        0.0006302137396231583,
+        0.0005461210283727487
+      ],
+      "dq_rmse_per_joint": [
+        0.00743740043843084,
+        0.006996775049665012,
+        0.008380362096320015,
+        0.007308444225196221,
+        0.005774799836944192,
+        0.006664004782795274,
+        0.004359605115228715
+      ],
+      "tau_rmse_per_joint": [
+        0.9746825592887834,
+        0.8138810693596332,
+        0.741987587584036,
+        0.8600382137919866,
+        0.37118016766911055,
+        0.39313523614599727,
+        0.24284340819786776
+      ]
+    },
+    "identified": {
+      "overlap_sample_count": 10001,
+      "q_rmse_per_joint": [
+        0.0006757352939137451,
+        0.0008802827848949327,
+        0.0008269765536351105,
+        0.0007713886526768802,
+        0.0004420364130182849,
+        0.0006104121285055448,
+        0.0005462418276701122
+      ],
+      "dq_rmse_per_joint": [
+        0.007364674712776494,
+        0.00675461227073586,
+        0.00836818041432693,
+        0.0071051036747278255,
+        0.005769548093587116,
+        0.006640498015627366,
+        0.004361850890590121
+      ],
+      "tau_rmse_per_joint": [
+        0.8712456121427459,
+        0.6882888593698443,
+        0.7638740258417198,
+        0.4995715551321186,
+        0.3488865169582276,
+        0.3516338329189363,
+        0.24728742764093403
+      ]
+    }
+  }
+}

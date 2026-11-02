@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "runs": [
+    {
+      "mode": "all",
+      "train_count": 2,
+      "test_count": 1,
+      "all_referenced_json_present": true
+    },
+    {
+      "mode": "test",
+      "train_count": 2,
+      "test_count": 1,
+      "all_referenced_json_present": true
+    },
+    {
+      "mode": "train",
+      "train_count": 1,
+      "test_count": 1,
+      "all_referenced_json_present": true
+    },
+    {
+      "mode": "test",
+      "train_count": 500,
+      "test_count": 1,
+      "all_referenced_json_present": true
+    }
+  ],
+  "preserved_train_coefficients_equal": true
+}

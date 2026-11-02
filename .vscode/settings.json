@@ -1,0 +1,23 @@
+{
+  "python.terminal.activateEnvironment": true,
+  "python.testing.unittestEnabled": true,
+  "python.testing.unittestArgs": [
+    "-v",
+    "-s",
+    "tests",
+    "-p",
+    "test_*.py"
+  ],
+  "files.watcherExclude": {
+    "**/data/raw/**": true,
+    "**/data/processed/**": true
+  },
+  "search.exclude": {
+    "**/data/raw/**": true,
+    "**/data/processed/**": true,
+    "**/reference/**": true
+  },
+  "files.encoding": "utf8",
+  "python-envs.defaultEnvManager": "ms-python.python:conda",
+  "python-envs.pythonProjects": []
+}

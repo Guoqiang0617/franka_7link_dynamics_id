@@ -1,0 +1,10 @@
+{
+  "checked_utc": "2026-11-01T12:11:35.759015+00:00",
+  "original_workspace": "/home/guoqiang/franka_ros2_ws",
+  "check": "All original source sizes and SHA-256 digests compared with packaged MANIFEST.csv",
+  "file_count": 1791,
+  "bytes": 10394229778,
+  "success": true,
+  "errors": [],
+  "elapsed_seconds": 216.11924366099993
+}

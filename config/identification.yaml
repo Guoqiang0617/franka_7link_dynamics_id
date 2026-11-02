@@ -1,0 +1,11 @@
+# PC-IRLS settings; used by both run_pipeline.py and identify_parameters.py.
+max_iterations: 50
+tolerance: 0.0001
+tukey_constant: 4.685
+data_weight: 0.0001
+null_weight: 1.0
+svd_threshold: 0.00001
+min_eigenvalue: 0.000001
+# "sdp" fails clearly if a constrained solution cannot be obtained.
+# "projection" is an explicit approximate alternative, not the default.
+solver: sdp

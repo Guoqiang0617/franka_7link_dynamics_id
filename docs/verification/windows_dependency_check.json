@@ -1,0 +1,80 @@
+{
+  "platform": "win-64",
+  "dependency_solve_success": true,
+  "native_windows_execution_tested": false,
+  "packages": [
+    {
+      "name": "python",
+      "version": "3.10.22",
+      "build": "hc20f281_0_cpython",
+      "subdir": "win-64"
+    },
+    {
+      "name": "pyyaml",
+      "version": "6.0.3",
+      "build": "py310hdb0e946_1",
+      "subdir": "win-64"
+    },
+    {
+      "name": "numpy",
+      "version": "2.2.6",
+      "build": "py310h4987827_0",
+      "subdir": "win-64"
+    },
+    {
+      "name": "scipy",
+      "version": "1.15.2",
+      "build": "py310h15c175c_0",
+      "subdir": "win-64"
+    },
+    {
+      "name": "scs",
+      "version": "3.2.11",
+      "build": "default_py310h0ccbb29_1",
+      "subdir": "win-64"
+    },
+    {
+      "name": "eigenpy",
+      "version": "3.12.0",
+      "build": "py310h35ab371_3",
+      "subdir": "win-64"
+    },
+    {
+      "name": "pandas",
+      "version": "2.3.3",
+      "build": "py310hed136d8_2",
+      "subdir": "win-64"
+    },
+    {
+      "name": "matplotlib-base",
+      "version": "3.10.9",
+      "build": "py310h0bdd906_0",
+      "subdir": "win-64"
+    },
+    {
+      "name": "clarabel",
+      "version": "0.11.1",
+      "build": "py310hf13f778_2",
+      "subdir": "win-64"
+    },
+    {
+      "name": "pinocchio-python",
+      "version": "3.8.0",
+      "build": "py310h9444e41_1",
+      "subdir": "win-64"
+    },
+    {
+      "name": "cvxpy",
+      "version": "1.6.7",
+      "build": "py310h5588dad_0",
+      "subdir": "win-64"
+    },
+    {
+      "name": "pinocchio",
+      "version": "3.8.0",
+      "build": "h5588dad_1",
+      "subdir": "win-64"
+    }
+  ],
+  "mujoco": "3.3.7 installed by pip; conda dry-run does not test pip packages"
+}

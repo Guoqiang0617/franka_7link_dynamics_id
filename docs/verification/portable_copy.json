@@ -1,0 +1,14 @@
+{
+  "platform": "Linux",
+  "copy_root": "/tmp/franka 交接测试 s7hfjwqv/franka 项目副本",
+  "path_contains_spaces_and_chinese": true,
+  "data_scope": "first five train/test CSVs plus trajectory 350 JSON/CSV; not a second copy of the full 10 GB snapshot",
+  "success": true,
+  "imported_module": "/tmp/franka 交接测试 s7hfjwqv/franka 项目副本/franka_7link_dynamics_id/__init__.py",
+  "profile": "quick",
+  "pipeline_seconds": 12.996679008998399,
+  "trajectory": "/tmp/franka 交接测试 s7hfjwqv/franka 项目副本/data/trajectories/test/trajectory_350_20260515_230214.json",
+  "expected_outputs_present": true,
+  "original_editable_install_restored": true,
+  "elapsed_seconds": 19.473222844000702
+}

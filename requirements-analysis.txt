@@ -1,0 +1,3 @@
+# First create and activate environment-windows.yml, which installs Pinocchio.
+# This file is only a convenience equivalent to `python -m pip install -e .`.
+-e .

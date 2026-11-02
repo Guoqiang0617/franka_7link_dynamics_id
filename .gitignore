@@ -1,0 +1,29 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+MUJOCO_LOG.TXT
+.pytest_cache/
+
+# Download raw data separately; regenerate processed data locally.
+/data/raw/
+/data/processed/
+/data/acquisitions/
+
+# Large local data/distribution archives.
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+
+# Local environments, credentials and editor/OS temporary files.
+.env
+.env.*
+!.env.example
+.conda/
+.DS_Store
+Thumbs.db
+*.before-*
+*.tmp

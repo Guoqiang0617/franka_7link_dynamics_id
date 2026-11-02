@@ -1,0 +1,105 @@
+
+Running check_environment.py
+{
+  "python": "3.10.22 | packaged by conda-forge | (main, Oct  6 2026, 23:02:24) [GCC 14.4.0]",
+  "platform": "Linux-5.15.0-1032-realtime-x86_64-with-glibc2.35",
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.2",
+    "pandas": "2.3.3",
+    "yaml": "6.0.3",
+    "matplotlib": "3.10.9",
+    "pinocchio": "3.8.0",
+    "cvxpy": "1.6.7",
+    "mujoco": "3.3.7",
+    "franka_7link_dynamics_id": "0.1.0"
+  },
+  "success": true,
+  "failures": []
+}
+Environment and project files are ready.
+
+Running identify_parameters.py
+Building 84-parameter regressor for 143359 samples.
+Regressor: 7167/143359 samples
+Regressor: 14334/143359 samples
+Regressor: 21501/143359 samples
+Regressor: 28668/143359 samples
+Regressor: 35835/143359 samples
+Regressor: 43002/143359 samples
+Regressor: 50169/143359 samples
+Regressor: 57336/143359 samples
+Regressor: 64503/143359 samples
+Regressor: 71670/143359 samples
+Regressor: 78837/143359 samples
+Regressor: 86004/143359 samples
+Regressor: 93171/143359 samples
+Regressor: 100338/143359 samples
+Regressor: 107505/143359 samples
+Regressor: 114672/143359 samples
+Regressor: 121839/143359 samples
+Regressor: 129006/143359 samples
+Regressor: 136173/143359 samples
+Regressor: 143340/143359 samples
+PC-IRLS 1/50: relative change=1.725e+00, RMSE=1.85924 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 2/50: relative change=1.842e-01, RMSE=1.81516 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 3/50: relative change=8.043e-02, RMSE=1.79531 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 4/50: relative change=7.428e-02, RMSE=1.78341 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 5/50: relative change=5.640e-02, RMSE=1.77546 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 6/50: relative change=3.839e-02, RMSE=1.77133 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 7/50: relative change=3.431e-02, RMSE=1.76988 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 8/50: relative change=3.908e-03, RMSE=1.76933 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 9/50: relative change=3.864e-03, RMSE=1.76907 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 10/50: relative change=2.733e-03, RMSE=1.76894 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 11/50: relative change=1.931e-03, RMSE=1.76888 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 12/50: relative change=1.273e-03, RMSE=1.76885 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 13/50: relative change=8.523e-04, RMSE=1.76884 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 14/50: relative change=6.116e-04, RMSE=1.76883 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 15/50: relative change=4.499e-04, RMSE=1.76884 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 16/50: relative change=3.342e-04, RMSE=1.76885 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 17/50: relative change=2.636e-04, RMSE=1.76886 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 18/50: relative change=2.240e-04, RMSE=1.76887 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 19/50: relative change=1.891e-04, RMSE=1.76889 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 20/50: relative change=1.589e-04, RMSE=1.76890 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 21/50: relative change=1.346e-04, RMSE=1.76891 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 22/50: relative change=1.131e-04, RMSE=1.76891 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 23/50: relative change=1.013e-04, RMSE=1.76892 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 24/50: relative change=1.022e-04, RMSE=1.76893 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+PC-IRLS 25/50: relative change=9.066e-05, RMSE=1.76894 Nm, solver=cvxpy SDP (CLARABEL: optimal)
+Finished: rank 57/84, nullity 27, train RMSE 1.76894 Nm
+
+Running evaluate_parameters.py
+Evaluated 1000/473975 held-out samples
+Evaluated 26000/473975 held-out samples
+Evaluated 51000/473975 held-out samples
+Evaluated 76000/473975 held-out samples
+Evaluated 101000/473975 held-out samples
+Evaluated 126000/473975 held-out samples
+Evaluated 151000/473975 held-out samples
+Evaluated 176000/473975 held-out samples
+Evaluated 201000/473975 held-out samples
+Evaluated 226000/473975 held-out samples
+Evaluated 251000/473975 held-out samples
+Evaluated 276000/473975 held-out samples
+Evaluated 301000/473975 held-out samples
+Evaluated 326000/473975 held-out samples
+Evaluated 351000/473975 held-out samples
+Evaluated 376000/473975 held-out samples
+Evaluated 401000/473975 held-out samples
+Evaluated 426000/473975 held-out samples
+Evaluated 451000/473975 held-out samples
+Evaluated 473975/473975 held-out samples
+full_dynamics: nominal 1.28225 Nm, identified 1.01811 Nm
+gravity_replaced: nominal 1.27600 Nm, identified 1.04833 Nm
+
+Running export_model.py
+Updated inertial elements in 7 links: /home/guoqiang/franka_ros2_ws/franka_7link_dynamics_id/models/generated/fr3_identified.urdf
+Generated: /home/guoqiang/franka_ros2_ws/franka_7link_dynamics_id/models/generated/fr3_ffs_nominal.xml
+Generated: /home/guoqiang/franka_ros2_ws/franka_7link_dynamics_id/models/generated/fr3_ffs_identified.xml
+
+Running run_ffs_simulation.py
+Updated inertial elements in 7 links: /home/guoqiang/franka_ros2_ws/franka_7link_dynamics_id/results/simulation/models/fr3_identified.urdf
+Saved comparison figure: /home/guoqiang/franka_ros2_ws/franka_7link_dynamics_id/results/simulation/ffs_simulation_comparison.png
+
+Completed full pipeline in 92.4 s
+Open /home/guoqiang/franka_ros2_ws/franka_7link_dynamics_id/results/RUN_REPORT.md

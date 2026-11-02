@@ -1,0 +1,32 @@
+/**:
+  controller_manager:
+    ros__parameters:
+      ffs_trajectory_controller:
+        type: franka_7link_dynamics_id_ros2/FFSTrajectoryController
+      ffs_data_collection_controller:
+        type: franka_7link_dynamics_id_ros2/FFSDataCollectionController
+      velocity_based_joint_position_controller:
+        type: franka_7link_dynamics_id_ros2/VelocityBasedJointPositionController
+
+  ffs_trajectory_controller:
+    ros__parameters:
+      arm_id: fr3
+      num_harmonics: 5
+      base_frequency: 0.1
+      duration: 10.0
+      initial_q: [0.0, -0.78539816339, 0.0, -2.35619449019, 0.0, 1.57079632679, 0.78539816339]
+      joint_position_min: [-2.9007, -1.8361, -2.9007, -3.0770, -2.8763, 0.4398, -3.0508]
+      joint_position_max: [2.9007, 1.8361, 2.9007, -0.1169, 2.8763, 4.6216, 3.0508]
+      joint_velocity_max: [2.62, 2.62, 2.62, 2.62, 5.26, 4.18, 5.26]
+
+  ffs_data_collection_controller:
+    ros__parameters:
+      arm_id: fr3
+      output_file: /tmp/franka_7link_id.csv
+      collection_rate_hz: 1000.0
+
+  velocity_based_joint_position_controller:
+    ros__parameters:
+      arm_id: fr3
+      motion_duration: 8.0
+      target_q: [0.0, -0.78539816339, 0.0, -2.35619449019, 0.0, 1.57079632679, 0.78539816339]

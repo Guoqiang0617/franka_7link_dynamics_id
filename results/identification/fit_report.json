@@ -1,0 +1,556 @@
+{
+  "model": "franka_fr3",
+  "scope": "fr3_link1 through fr3_link7 rigid inertias plus joint friction",
+  "training_file": "E:\\\u5176\u4ed6\u6742\u6d3b\\franka_7link_dynamics_id\\data\\processed\\train.npz",
+  "parameter_count": 84,
+  "rigid_parameter_count": 70,
+  "friction_parameter_count": 14,
+  "training_sample_count": 102881,
+  "training_target": "raw measured tau_J, including model gravity in the regressor",
+  "settings": {
+    "max_iterations": 50,
+    "tolerance": 0.0001,
+    "tukey_constant": 4.685,
+    "data_weight": 0.0001,
+    "null_weight": 1.0,
+    "svd_threshold": 1e-05,
+    "min_eigenvalue": 1e-06,
+    "solver": "sdp"
+  },
+  "nominal_train_metrics": {
+    "rmse_per_joint_nm": [
+      2.93149720054339,
+      3.5573739069037225,
+      2.666888440538973,
+      2.053094893524439,
+      0.3463111600324876,
+      0.33306652396678643,
+      0.16710563765985487
+    ],
+    "mae_per_joint_nm": [
+      1.9621592094694398,
+      2.425921758092097,
+      1.8170250748824432,
+      1.4608508650206031,
+      0.2859104617994966,
+      0.2553687536393547,
+      0.14229191759157242
+    ],
+    "r2_per_joint": [
+      -0.4243883191908091,
+      0.9655503702520605,
+      0.8927309674852288,
+      0.8988137344597633,
+      0.7768130241181683,
+      0.8570953587129491,
+      0.7305202752793325
+    ],
+    "rmse_overall_nm": 2.165801289180049,
+    "mae_overall_nm": 1.1927897200707185,
+    "r2_mean": 0.671019344445242
+  },
+  "physical_links": [
+    {
+      "link": "fr3_link1",
+      "mass_kg": 2.927507322425589,
+      "mass_ratio_to_nominal": 1.0000143390341598,
+      "com_m": [
+        -2.575572313057638e-10,
+        -4.362593202478872e-06,
+        -0.03815027332471898
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.03235576133172745,
+          -9.354347797862726e-17,
+          -3.0678985721393666e-10
+        ],
+        [
+          -9.354347797862726e-17,
+          0.03235576133172068,
+          -1.0788278453276559e-08
+        ],
+        [
+          -3.0678985721393666e-10,
+          -1.0788278453276559e-08,
+          2.0158628947027383e-06
+        ]
+      ],
+      "pseudo_inertia_min_eigenvalue": 1.0079314439647525e-06
+    },
+    {
+      "link": "fr3_link2",
+      "mass_kg": 9.516978134069673,
+      "mass_ratio_to_nominal": 3.241988782458014,
+      "com_m": [
+        0.0027115452141379852,
+        -0.028484877357221775,
+        -0.0024216772347056006
+      ],
+      "inertia_com_kg_m2": [
+        [
+          2.015090656400098e-06,
+          4.827631017384829e-10,
+          3.257773569274392e-10
+        ],
+        [
+          4.827631017384829e-10,
+          2.0120999880213555e-06,
+          -6.079855678154181e-10
+        ],
+        [
+          3.257773569274392e-10,
+          -6.079855678154181e-10,
+          2.010939353423377e-06
+        ]
+      ],
+      "pseudo_inertia_min_eigenvalue": 1.003882466062333e-06
+    },
+    {
+      "link": "fr3_link3",
+      "mass_kg": 8.109479445565553,
+      "mass_ratio_to_nominal": 3.6123989919106303,
+      "com_m": [
+        0.0016866815349932762,
+        -0.001928872645515099,
+        -0.28961449564168135
+      ],
+      "inertia_com_kg_m2": [
+        [
+          2.094644793948497e-06,
+          4.4199065004621235e-11,
+          2.6976361726036013e-09
+        ],
+        [
+          4.4199065004621235e-11,
+          2.0947678026628225e-06,
+          -6.338528877117278e-10
+        ],
+        [
+          2.6976361726036013e-09,
+          -6.338528877117278e-10,
+          2.003667116458823e-06
+        ]
+      ],
+      "pseudo_inertia_min_eigenvalue": 1.0012528981006164e-06
+    },
+    {
+      "link": "fr3_link4",
+      "mass_kg": 5.295291940291988,
+      "mass_ratio_to_nominal": 2.0245071457545607,
+      "com_m": [
+        -0.04465745851379054,
+        0.17801905261759676,
+        -0.0028891461239716723
+      ],
+      "inertia_com_kg_m2": [
+        [
+          2.0349278515019442e-06,
+          7.55936408608493e-09,
+          -2.1373481912285996e-10
+        ],
+        [
+          7.55936408608493e-09,
+          2.0050925401381148e-06,
+          4.885487682806944e-10
+        ],
+        [
+          -2.1373481912285996e-10,
+          4.885487682806944e-10,
+          2.0364595256228135e-06
+        ]
+      ],
+      "pseudo_inertia_min_eigenvalue": 1.000966254406541e-06
+    },
+    {
+      "link": "fr3_link5",
+      "mass_kg": 2.111542456916426,
+      "mass_ratio_to_nominal": 0.9073626490534352,
+      "com_m": [
+        0.003168977159557702,
+        0.03707913850529,
+        -0.21792025339385224
+      ],
+      "inertia_com_kg_m2": [
+        [
+          2.0516046296131796e-06,
+          -5.5793767392633975e-11,
+          5.418786988131002e-10
+        ],
+        [
+          -5.5793767392633975e-11,
+          2.0502557989132697e-06,
+          8.141962552082882e-09
+        ],
+        [
+          5.418786988131002e-10,
+          8.141962552082882e-09,
+          2.004090187927767e-06
+        ]
+      ],
+      "pseudo_inertia_min_eigenvalue": 1.001199691721539e-06
+    },
+    {
+      "link": "fr3_link6",
+      "mass_kg": 1.3071388691811285,
+      "mass_ratio_to_nominal": 0.7193790769578268,
+      "com_m": [
+        0.12098557546028654,
+        -0.052928773538240846,
+        -0.0062165213251563775
+      ],
+      "inertia_com_kg_m2": [
+        [
+          2.0047694385895605e-06,
+          6.469365102651503e-09,
+          6.538891489903109e-10
+        ],
+        [
+          6.469365102651503e-09,
+          2.016425800298316e-06,
+          -2.993630538231616e-10
+        ],
+        [
+          6.538891489903109e-10,
+          -2.993630538231616e-10,
+          2.0184304282064303e-06
+        ]
+      ],
+      "pseudo_inertia_min_eigenvalue": 1.0003731253737586e-06
+    },
+    {
+      "link": "fr3_link7",
+      "mass_kg": 0.05862282856720312,
+      "mass_ratio_to_nominal": 0.09347597248853896,
+      "com_m": [
+        0.03837389640489933,
+        -0.00026735826248295446,
+        0.05347895746475632
+      ],
+      "inertia_com_kg_m2": [
+        [
+          2.00417645435604e-06,
+          -2.916345641514278e-10,
+          -1.9973203603995595e-09
+        ],
+        [
+          -2.916345641514278e-10,
+          2.0059682432594598e-06,
+          -6.721730500088383e-12
+        ],
+        [
+          -1.9973203603995595e-09,
+          -6.721730500088383e-12,
+          2.0031697159434483e-06
+        ]
+      ],
+      "pseudo_inertia_min_eigenvalue": 1.0004903898209521e-06
+    }
+  ],
+  "interpretation_notes": [
+    "fr3_link2: fitted mass is 3.24 times its nominal prior. This is a physically feasible parameter representative, not an independently measured link mass.",
+    "fr3_link3: fitted mass is 3.61 times its nominal prior. This is a physically feasible parameter representative, not an independently measured link mass.",
+    "fr3_link4: fitted mass is 2.02 times its nominal prior. This is a physically feasible parameter representative, not an independently measured link mass.",
+    "fr3_link7: fitted mass is 0.0935 times its nominal prior. This is a physically feasible parameter representative, not an independently measured link mass."
+  ],
+  "iterations": 25,
+  "solver": "cvxpy SDP (CLARABEL: optimal)",
+  "rank": 57,
+  "nullity": 27,
+  "condition_number": 88.85014992799016,
+  "rmse_nm": 1.8099919572861167,
+  "singular_values": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    2.9809400882224044e-06,
+    1.2317317048598735e-05,
+    2.2988144347277777e-05,
+    2.8175299156105873e-05,
+    3.557440304859389e-05,
+    4.933066254594541e-05,
+    6.994982011982222e-05,
+    7.145872023655473e-05,
+    94.67133506846709,
+    95.58831257353579,
+    97.79527998836842,
+    98.03265949943541,
+    98.96584578995248,
+    99.80125328591602,
+    105.99422288120539,
+    321.10051110539075,
+    337.3943155578085,
+    340.0647966957624,
+    341.5785581363489,
+    347.2972355423394,
+    347.44285722581924,
+    348.3467539982688,
+    354.7425554130844,
+    441.67624810269905,
+    495.424161048381,
+    539.5343632917915,
+    624.9876820813765,
+    633.9703135211471,
+    673.9534108507693,
+    743.7197718517785,
+    775.5394067582554,
+    841.3996553339852,
+    885.1273536674198,
+    960.3431810316545,
+    981.1475981639207,
+    1000.9868877482419,
+    1006.9815197147261,
+    1084.0936916707517,
+    1162.3866396156623,
+    1247.2189288209138,
+    1332.8927113480077,
+    1377.7297955276533,
+    1423.7826316866006,
+    1555.768039390048,
+    1615.452990792124,
+    1705.974871018898,
+    1749.259816593371,
+    1782.5584591875029,
+    1891.7254355140474,
+    1914.2967035845404,
+    2062.5366248490755,
+    2355.5152159104086,
+    2375.953942771712,
+    2477.935726945901,
+    2698.4542797379195,
+    2718.843509184286,
+    2786.848725929349,
+    3064.419226482452,
+    3117.291885337633,
+    3347.9969888250594,
+    3665.092396418287,
+    3703.5043868279017,
+    5821.849809017293,
+    6299.504170709876,
+    8411.562314716293
+  ],
+  "converged": true,
+  "history": [
+    {
+      "iteration": 1,
+      "relative_change": 1.6783732609075945,
+      "rmse_nm": 1.8978074022353884,
+      "nonzero_weight_fraction": 0.8840102365145862,
+      "solver": "cvxpy SDP (CLARABEL: optimal)"
+    },
+    {
+      "iteration": 2,
+      "relative_change": 0.13906935688264468,
+      "rmse_nm": 1.8544573403556206,
+      "nonzero_weight_fraction": 0.8679570155255656,
+      "solver": "cvxpy SDP (CLARABEL: optimal)"
+    },
+    {
+      "iteration": 3,
+      "relative_change": 0.09463922935292635,
+      "rmse_nm": 1.8345490142179908,
+      "nonzero_weight_fraction": 0.8701440082647497,
+      "solver": "cvxpy SDP (CLARABEL: optimal)"
+    },
+    {
+      "iteration": 4,
+      "relative_change": 0.0829247329617336,
+      "rmse_nm": 1.8225527554438834,
+      "nonzero_weight_fraction": 0.8714867523782678,
+      "solver": "cvxpy SDP (CLARABEL: optimal)"
+    },
+    {
+      "iteration": 5,
+      "relative_change": 0.05841054460010579,
+      "rmse_nm": 1.814510288182066,
+      "nonzero_weight_fraction": 0.8725212346580724,
+      "solver": "cvxpy SDP (CLARABEL: optimal)"
+    },
+    {
+      "iteration": 6,
+      "relative_change": 0.08194949048576368,
+      "rmse_nm": 1.8117155709321398,
+      "nonzero_weight_fraction": 0.8733099406109972,
+      "solver": "cvxpy SDP (CLARABEL: optimal)"
+    },
+    {
+      "iteration": 7,
+      "relative_change": 0.0068777859936240944,
+      "rmse_nm": 1.8107414465819864,
+      "nonzero_weight_fraction": 0.8740500467252734,
+      "solver": "cvxpy SDP (CLARABEL: optimal)"
+    },
+    {
+      "iteration": 8,
+      "relative_change": 0.0052819692340968505,
+      "rmse_nm": 1.8103115516631016,
+      "nonzero_weight_fraction": 0.874361085692624,
+      "solver": "cvxpy SDP (CLARABEL: optimal)"
+    },
+    {
+      "iteration": 9,
+      "relative_change": 0.004066646134204757,
+      "rmse_nm": 1.8100938084848057,
+      "nonzero_weight_fraction": 0.8744818910058362,
+      "solver": "cvxpy SDP (CLARABEL: optimal)"
+    },
+    {
+      "iteration": 10,
+      "relative_change": 0.002675091324478919,
+      "rmse_nm": 1.8099794260496374,
+      "nonzero_weight_fraction": 0.8745652050149479,
+      "solver": "cvxpy SDP (CLARABEL: optimal)"
+    },
+    {
+      "iteration": 11,
+      "relative_change": 0.0016120776756537957,
+      "rmse_nm": 1.8099162876992374,
+      "nonzero_weight_fraction": 0.8746040848858667,
+      "solver": "cvxpy SDP (CLARABEL: optimal)"
+    },
+    {
+      "iteration": 12,
+      "relative_change": 0.001004367190163975,
+      "rmse_nm": 1.8098806926160198,
+      "nonzero_weight_fraction": 0.8746721246599747,
+      "solver": "cvxpy SDP (CLARABEL: optimal)"
+    },
+    {
+      "iteration": 13,
+      "relative_change": 0.0007405525710443647,
+      "rmse_nm": 1.8098701181039385,
+      "nonzero_weight_fraction": 0.8746707360931562,
+      "solver": "cvxpy SDP (CLARABEL: optimal)"
+    },
+    {
+      "iteration": 14,
+      "relative_change": 0.0005739413142974515,
+      "rmse_nm": 1.8098719877496467,
+      "nonzero_weight_fraction": 0.8746582389917894,
+      "solver": "cvxpy SDP (CLARABEL: optimal)"
+    },
+    {
+      "iteration": 15,
+      "relative_change": 0.0004917382355673707,
+      "rmse_nm": 1.8098777537980495,
+      "nonzero_weight_fraction": 0.8746762903604303,
+      "solver": "cvxpy SDP (CLARABEL: optimal)"
+    },
+    {
+      "iteration": 16,
+      "relative_change": 0.00041306293261933415,
+      "rmse_nm": 1.809887628065422,
+      "nonzero_weight_fraction": 0.8746610161254265,
+      "solver": "cvxpy SDP (CLARABEL: optimal)"
+    },
+    {
+      "iteration": 17,
+      "relative_change": 0.0003609882832791962,
+      "rmse_nm": 1.8098982929531575,
+      "nonzero_weight_fraction": 0.8746721246599747,
+      "solver": "cvxpy SDP (CLARABEL: optimal)"
+    },
+    {
+      "iteration": 18,
+      "relative_change": 0.0002837442379370261,
+      "rmse_nm": 1.809911735672853,
+      "nonzero_weight_fraction": 0.8746679589595191,
+      "solver": "cvxpy SDP (CLARABEL: optimal)"
+    },
+    {
+      "iteration": 19,
+      "relative_change": 0.000230869389953545,
+      "rmse_nm": 1.809926288411277,
+      "nonzero_weight_fraction": 0.8746499075908782,
+      "solver": "cvxpy SDP (CLARABEL: optimal)"
+    },
+    {
+      "iteration": 20,
+      "relative_change": 0.00019366531580213868,
+      "rmse_nm": 1.8099405450450987,
+      "nonzero_weight_fraction": 0.87463879905633,
+      "solver": "cvxpy SDP (CLARABEL: optimal)"
+    },
+    {
+      "iteration": 21,
+      "relative_change": 0.00016584688212224492,
+      "rmse_nm": 1.8099532131069234,
+      "nonzero_weight_fraction": 0.8746235248213262,
+      "solver": "cvxpy SDP (CLARABEL: optimal)"
+    },
+    {
+      "iteration": 22,
+      "relative_change": 0.00014270827739903857,
+      "rmse_nm": 1.8099659788494333,
+      "nonzero_weight_fraction": 0.8746221362545077,
+      "solver": "cvxpy SDP (CLARABEL: optimal)"
+    },
+    {
+      "iteration": 23,
+      "relative_change": 0.00012214908256069905,
+      "rmse_nm": 1.8099756910355476,
+      "nonzero_weight_fraction": 0.8746193591208705,
+      "solver": "cvxpy SDP (CLARABEL: optimal)"
+    },
+    {
+      "iteration": 24,
+      "relative_change": 0.00010459949295327249,
+      "rmse_nm": 1.8099847614969706,
+      "nonzero_weight_fraction": 0.8746151934204149,
+      "solver": "cvxpy SDP (CLARABEL: optimal)"
+    },
+    {
+      "iteration": 25,
+      "relative_change": 9.0252656251669e-05,
+      "rmse_nm": 1.8099919572861167,
+      "nonzero_weight_fraction": 0.8746151934204149,
+      "solver": "cvxpy SDP (CLARABEL: optimal)"
+    }
+  ],
+  "rmse_per_joint_nm": [
+    2.4236197331561335,
+    3.048869051935107,
+    2.243996741176195,
+    1.6008305560614278,
+    0.24826809427226032,
+    0.29527790541809473,
+    0.1263137348056938
+  ],
+  "mae_per_joint_nm": [
+    1.5850021605413342,
+    2.0430682959495985,
+    1.5330515180752164,
+    1.0978570562482246,
+    0.1875651683628803,
+    0.22189564755082286,
+    0.09137152941829262
+  ],
+  "r2_per_joint": [
+    0.026404863571868553,
+    0.9746951905072263,
+    0.9240532647395341,
+    0.938483126801421,
+    0.8852962293737849,
+    0.8876828000691696,
+    0.8460268325555185
+  ],
+  "rmse_overall_nm": 1.8099919572861167,
+  "mae_overall_nm": 0.9656873394494756,
+  "r2_mean": 0.7832346153740747
+}

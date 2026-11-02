@@ -1,0 +1,20 @@
+<library path="franka_7link_dynamics_id_ros2">
+  <class
+    name="franka_7link_dynamics_id_ros2/FFSTrajectoryController"
+    type="franka_7link_dynamics_id::FFSTrajectoryController"
+    base_class_type="controller_interface::ControllerInterface">
+    <description>Executes bounded seven-joint finite Fourier series trajectories.</description>
+  </class>
+  <class
+    name="franka_7link_dynamics_id_ros2/FFSDataCollectionController"
+    type="franka_7link_dynamics_id::FFSDataCollectionController"
+    base_class_type="controller_interface::ControllerInterface">
+    <description>Records Franka robot state and model data; it does not read external sensors.</description>
+  </class>
+  <class
+    name="franka_7link_dynamics_id_ros2/VelocityBasedJointPositionController"
+    type="franka_7link_dynamics_id::VelocityBasedJointPositionController"
+    base_class_type="controller_interface::ControllerInterface">
+    <description>Moves the arm to the configured FFS start pose using joint velocity commands.</description>
+  </class>
+</library>

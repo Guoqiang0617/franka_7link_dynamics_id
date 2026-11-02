@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="fr3">
+  <link name="base">
+      </link>
+  <joint name="fr3_base_joint" type="fixed">
+    <parent link="base" />
+    <child link="fr3_link0" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
+  </joint>
+  <link name="fr3_link0">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0172 0.0004 0.0745" />
+      <mass value="2.3966" />
+      <inertia ixx="0.009" ixy="0.0" ixz="0.002" iyy="0.0115" iyz="0.0" izz="0.0085" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 -0.03" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.035" length="0.06" />
+      </geometry>
+      <material name="fr3_gray">
+        <color rgba="0.65 0.68 0.72 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="fr3_link0_accelerometer_top">
+      </link>
+  <joint name="fr3_link0_accelerometer_top_joint" type="fixed">
+    <origin rpy="3.1416 0.0 0.0" xyz="-0.017402 -0.007872 0.04715" />
+    <parent link="fr3_link0" />
+    <child link="fr3_link0_accelerometer_top" />
+  </joint>
+  <link name="fr3_link0_accelerometer_bottom">
+      </link>
+  <joint name="fr3_link0_accelerometer_bottom_joint" type="fixed">
+    <origin rpy="0.0 0.0 -1.5708" xyz="-0.019739 0.0015506 0.05075" />
+    <parent link="fr3_link0" />
+    <child link="fr3_link0_accelerometer_bottom" />
+  </joint>
+  <link name="fr3_link1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-2.57557231306e-10 -4.36259320248e-06 -0.0381502733247" />
+      <mass value="2.92750732243" />
+      <inertia ixx="0.0323557613317" ixy="-9.35434779786e-17" ixz="-3.06789857214e-10" iyy="0.0323557613317" iyz="-1.07882784533e-08" izz="2.0158628947e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 -0.03" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.035" length="0.06" />
+      </geometry>
+      <material name="fr3_gray">
+        <color rgba="0.65 0.68 0.72 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="fr3_link1_accelerometer_top">
+      </link>
+  <joint name="fr3_link1_accelerometer_top_joint" type="fixed">
+    <origin rpy="-1.5708 0.0 3.1416" xyz="0.017402 -0.093352 -0.00787" />
+    <parent link="fr3_link1" />
+    <child link="fr3_link1_accelerometer_top" />
+  </joint>
+  <link name="fr3_link1_accelerometer_bottom">
+      </link>
+  <joint name="fr3_link1_accelerometer_bottom_joint" type="fixed">
+    <origin rpy="-1.5708 1.5708 0.0" xyz="0.01974 -0.08975 0.00155" />
+    <parent link="fr3_link1" />
+    <child link="fr3_link1_accelerometer_bottom" />
+  </joint>
+  <joint name="fr3_joint1" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0.333" />
+    <parent link="fr3_link0" />
+    <child link="fr3_link1" />
+    <axis xyz="0 0 1" />
+    <limit effort="87.0" lower="-2.9007" upper="2.9007" velocity="2.62" />
+    <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-2.9007" soft_upper_limit="2.9007" />
+    <position_based_velocity_limits deceleration_limit="6.0" velocity_offset="0.652" />
+    <dynamics D="1" K="7000" damping="0.003" friction="0.2" gear_ratio="120.0" motor_inertia="4.206399e-05" mu_coulomb="0" mu_viscous="16" />
+  </joint>
+  <link name="fr3_link2">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00271154521414 -0.0284848773572 -0.00242167723471" />
+      <mass value="9.51697813407" />
+      <inertia ixx="2.0150906564e-06" ixy="4.82763101738e-10" ixz="3.25777356927e-10" iyy="2.01209998802e-06" iyz="-6.07985567815e-10" izz="2.01093935342e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 -0.03" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.035" length="0.06" />
+      </geometry>
+      <material name="fr3_gray">
+        <color rgba="0.65 0.68 0.72 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="fr3_link2_accelerometer_top">
+      </link>
+  <joint name="fr3_link2_accelerometer_top_joint" type="fixed">
+    <origin rpy="1.5708 0.0 3.1416" xyz="0.017403 -0.11715 0.00787" />
+    <parent link="fr3_link2" />
+    <child link="fr3_link2_accelerometer_top" />
+  </joint>
+  <link name="fr3_link2_accelerometer_bottom">
+      </link>
+  <joint name="fr3_link2_accelerometer_bottom_joint" type="fixed">
+    <origin rpy="1.5708 -1.5708 0.0" xyz="0.019737 -0.11875 -0.00155" />
+    <parent link="fr3_link2" />
+    <child link="fr3_link2_accelerometer_bottom" />
+  </joint>
+  <joint name="fr3_joint2" type="revolute">
+    <origin rpy="-1.570796326794897 0 0" xyz="0 0 0" />
+    <parent link="fr3_link1" />
+    <child link="fr3_link2" />
+    <axis xyz="0 0 1" />
+    <limit effort="87.0" lower="-1.8361" upper="1.8361" velocity="2.62" />
+    <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-1.8361" soft_upper_limit="1.8361" />
+    <position_based_velocity_limits deceleration_limit="2.585" velocity_offset="0.25" />
+    <dynamics D="1" K="7000" damping="0.003" friction="0.2" gear_ratio="120.0" motor_inertia="4.206399e-05" mu_coulomb="0" mu_viscous="16" />
+  </joint>
+  <link name="fr3_link3">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00168668153499 -0.00192887264552 -0.289614495642" />
+      <mass value="8.10947944557" />
+      <inertia ixx="2.09464479395e-06" ixy="4.41990650046e-11" ixz="2.6976361726e-09" iyy="2.09476780266e-06" iyz="-6.33852887712e-10" izz="2.00366711646e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 -0.03" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.035" length="0.06" />
+      </geometry>
+      <material name="fr3_gray">
+        <color rgba="0.65 0.68 0.72 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="fr3_link3_accelerometer_top">
+      </link>
+  <joint name="fr3_link3_accelerometer_top_joint" type="fixed">
+    <origin rpy="-1.5708 0.0 0.0" xyz="0.065099 0.077352 -0.00787" />
+    <parent link="fr3_link3" />
+    <child link="fr3_link3_accelerometer_top" />
+  </joint>
+  <link name="fr3_link3_accelerometer_bottom">
+      </link>
+  <joint name="fr3_link3_accelerometer_bottom_joint" type="fixed">
+    <origin rpy="1.5708 1.5708 0.0" xyz="0.062769 0.073756 0.00155" />
+    <parent link="fr3_link3" />
+    <child link="fr3_link3_accelerometer_bottom" />
+  </joint>
+  <joint name="fr3_joint3" type="revolute">
+    <origin rpy="1.570796326794897 0 0" xyz="0 -0.316 0" />
+    <parent link="fr3_link2" />
+    <child link="fr3_link3" />
+    <axis xyz="0 0 1" />
+    <limit effort="87.0" lower="-2.9007" upper="2.9007" velocity="2.62" />
+    <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-2.9007" soft_upper_limit="2.9007" />
+    <position_based_velocity_limits deceleration_limit="3.5" velocity_offset="0.2005" />
+    <dynamics D="1" K="7000" damping="0.003" friction="0.2" gear_ratio="120.0" motor_inertia="3.211626e-05" mu_coulomb="0" mu_viscous="16" />
+  </joint>
+  <link name="fr3_link4">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0446574585138 0.178019052618 -0.00288914612397" />
+      <mass value="5.29529194029" />
+      <inertia ixx="2.0349278515e-06" ixy="7.55936408608e-09" ixz="-2.13734819123e-10" iyy="2.00509254014e-06" iyz="4.88548768281e-10" izz="2.03645952562e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 -0.03" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.035" length="0.06" />
+      </geometry>
+      <material name="fr3_gray">
+        <color rgba="0.65 0.68 0.72 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="fr3_link4_accelerometer_top">
+      </link>
+  <joint name="fr3_link4_accelerometer_top_joint" type="fixed">
+    <origin rpy="-1.5708 0.0 -3.1416" xyz="-0.0651 0.046252 -0.00787" />
+    <parent link="fr3_link4" />
+    <child link="fr3_link4_accelerometer_top" />
+  </joint>
+  <link name="fr3_link4_accelerometer_bottom">
+      </link>
+  <joint name="fr3_link4_accelerometer_bottom_joint" type="fixed">
+    <origin rpy="-1.5708 1.5708 0.0" xyz="-0.062775 0.049753 0.00155" />
+    <parent link="fr3_link4" />
+    <child link="fr3_link4_accelerometer_bottom" />
+  </joint>
+  <joint name="fr3_joint4" type="revolute">
+    <origin rpy="1.570796326794897 0 0" xyz="0.0825 0 0" />
+    <parent link="fr3_link3" />
+    <child link="fr3_link4" />
+    <axis xyz="0 0 1" />
+    <limit effort="87.0" lower="-3.077" upper="-0.1169" velocity="2.62" />
+    <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-3.077" soft_upper_limit="-0.1169" />
+    <position_based_velocity_limits deceleration_limit="4.0" velocity_offset="0.3542" />
+    <dynamics D="1" K="7000" damping="0.003" friction="0.2" gear_ratio="120.0" motor_inertia="3.211626e-05" mu_coulomb="0" mu_viscous="16" />
+  </joint>
+  <link name="fr3_link5">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00316897715956 0.0370791385053 -0.217920253394" />
+      <mass value="2.11154245692" />
+      <inertia ixx="2.05160462961e-06" ixy="-5.57937673926e-11" ixz="5.41878698813e-10" iyy="2.05025579891e-06" iyz="8.14196255208e-09" izz="2.00409018793e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 -0.03" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.035" length="0.06" />
+      </geometry>
+      <material name="fr3_gray">
+        <color rgba="0.65 0.68 0.72 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="fr3_link5_accelerometer_top">
+      </link>
+  <joint name="fr3_link5_accelerometer_top_joint" type="fixed">
+    <origin rpy="-1.5708 0.0 0.0" xyz="-0.017363 0.085872 -0.00795" />
+    <parent link="fr3_link5" />
+    <child link="fr3_link5_accelerometer_top" />
+  </joint>
+  <link name="fr3_link5_accelerometer_bottom">
+      </link>
+  <joint name="fr3_link5_accelerometer_bottom_joint" type="fixed">
+    <origin rpy="1.5708 1.5708 0.0" xyz="-0.019742 0.082275 0.00146" />
+    <parent link="fr3_link5" />
+    <child link="fr3_link5_accelerometer_bottom" />
+  </joint>
+  <joint name="fr3_joint5" type="revolute">
+    <origin rpy="-1.570796326794897 0 0" xyz="-0.0825 0.384 0" />
+    <parent link="fr3_link4" />
+    <child link="fr3_link5" />
+    <axis xyz="0 0 1" />
+    <limit effort="12.0" lower="-2.8763" upper="2.8763" velocity="5.26" />
+    <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-2.8763" soft_upper_limit="2.8763" />
+    <position_based_velocity_limits deceleration_limit="17.0" velocity_offset="0.5738" />
+    <dynamics D="1" K="7000" damping="0.003" friction="0.2" gear_ratio="80.0" motor_inertia="3.211626e-05" mu_coulomb="0" mu_viscous="16" />
+  </joint>
+  <link name="fr3_link6">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.12098557546 -0.0529287735382 -0.00621652132516" />
+      <mass value="1.30713886918" />
+      <inertia ixx="2.00476943859e-06" ixy="6.46936510265e-09" ixz="6.5388914899e-10" iyy="2.0164258003e-06" iyz="-2.99363053823e-10" izz="2.01843042821e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 -0.03" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.035" length="0.06" />
+      </geometry>
+      <material name="fr3_gray">
+        <color rgba="0.65 0.68 0.72 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="fr3_joint6" type="revolute">
+    <origin rpy="1.570796326794897 0 0" xyz="0 0 0" />
+    <parent link="fr3_link5" />
+    <child link="fr3_link6" />
+    <axis xyz="0 0 1" />
+    <limit effort="12.0" lower="0.4398" upper="4.6216" velocity="4.18" />
+    <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="0.4398" soft_upper_limit="4.6216" />
+    <position_based_velocity_limits deceleration_limit="5.5" velocity_offset="0.4885" />
+    <dynamics D="1" K="7000" damping="0.003" friction="0.2" gear_ratio="80.0" motor_inertia="3.211626e-05" mu_coulomb="0" mu_viscous="16" />
+  </joint>
+  <link name="fr3_link7">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.0383738964049 -0.000267358262483 0.0534789574648" />
+      <mass value="0.0586228285672" />
+      <inertia ixx="2.00417645436e-06" ixy="-2.91634564151e-10" ixz="-1.9973203604e-09" iyy="2.00596824326e-06" iyz="-6.72173050009e-12" izz="2.00316971594e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 -0.03" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.035" length="0.06" />
+      </geometry>
+      <material name="fr3_gray">
+        <color rgba="0.65 0.68 0.72 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="fr3_joint7" type="revolute">
+    <origin rpy="1.570796326794897 0 0" xyz="0.088 0 0" />
+    <parent link="fr3_link6" />
+    <child link="fr3_link7" />
+    <axis xyz="0 0 1" />
+    <limit effort="12.0" lower="-3.0508" upper="3.0508" velocity="5.26" />
+    <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-3.0508" soft_upper_limit="3.0508" />
+    <position_based_velocity_limits deceleration_limit="17.0" velocity_offset="0.4592" />
+    <dynamics D="1" K="7000" damping="0.003" friction="0.2" gear_ratio="80.0" motor_inertia="3.211626e-05" mu_coulomb="0" mu_viscous="16" />
+  </joint>
+  <link name="fr3_link8" />
+  <joint name="fr3_joint8" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0.107" />
+    <parent link="fr3_link7" />
+    <child link="fr3_link8" />
+  </joint>
+</robot>

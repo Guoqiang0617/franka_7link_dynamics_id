@@ -1,0 +1,17 @@
+{
+  "python": "3.10.22 | packaged by conda-forge | (main, Oct  6 2026, 23:02:24) [GCC 14.4.0]",
+  "platform": "Linux-5.15.0-1032-realtime-x86_64-with-glibc2.35",
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.2",
+    "pandas": "2.3.3",
+    "yaml": "6.0.3",
+    "matplotlib": "3.10.9",
+    "pinocchio": "3.8.0",
+    "cvxpy": "1.6.7",
+    "mujoco": "3.3.7",
+    "franka_7link_dynamics_id": "0.1.0"
+  },
+  "success": true,
+  "failures": []
+}

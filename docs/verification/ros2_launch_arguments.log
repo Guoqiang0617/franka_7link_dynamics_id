@@ -1,0 +1,52 @@
+Arguments (pass arguments as '<name>:=<value>'):
+
+    'summary_file':
+        FFS summary JSON produced by the Python project.
+
+    'output_base_dir':
+        no description given
+        (default: PathJoinSubstitution('EnvVar('HOME'), 'franka_7link_dynamics_id_runs', 'acquisitions''))
+
+    'namespace':
+        no description given
+        (default: '')
+
+    'controller_manager':
+        no description given
+        (default: 'controller_manager')
+
+    'controller_manager_timeout':
+        no description given
+        (default: '15')
+
+    'trajectory_split':
+        no description given
+        (default: 'train')
+
+    'trajectory_index':
+        no description given
+        (default: '1')
+
+    'settle_time':
+        no description given
+        (default: '3.0')
+
+    'return_to_start_timeout':
+        no description given
+        (default: '20.0')
+
+    'collection_rate_hz':
+        no description given
+        (default: '1000.0')
+
+    'joint_states_topic':
+        no description given
+        (default: 'joint_states')
+
+    'start_position_tolerance':
+        no description given
+        (default: '0.01')
+
+    'start_velocity_tolerance':
+        no description given
+        (default: '0.03')

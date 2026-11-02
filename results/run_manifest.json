@@ -1,0 +1,25 @@
+{
+  "completed_utc": "2026-11-02T06:31:53.737372+00:00",
+  "profile": "full",
+  "quick_profile_is_workflow_check_only": false,
+  "python": "3.10.22 | packaged by conda-forge | (main, Oct  6 2026, 22:57:13) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.2",
+    "pandas": "2.3.3",
+    "cvxpy": "1.6.7",
+    "mujoco": "3.3.7"
+  },
+  "elapsed_seconds": 105.04283250001026,
+  "threads": 4,
+  "processed_data": "E:\\\u5176\u4ed6\u6742\u6d3b\\franka_7link_dynamics_id\\data\\processed",
+  "model_output": "E:\\\u5176\u4ed6\u6742\u6d3b\\franka_7link_dynamics_id\\models\\generated",
+  "trajectory": "E:\\\u5176\u4ed6\u6742\u6d3b\\franka_7link_dynamics_id\\data\\trajectories\\test\\trajectory_350_20260515_230214.json",
+  "experimental_csv": "E:\\\u5176\u4ed6\u6742\u6d3b\\franka_7link_dynamics_id\\data\\raw\\test\\trajectory_350_20260515_230214.csv",
+  "input_checksums": {
+    "data/MANIFEST.csv": "2b8486fbc404e8c99c4f78add32aa02df42d1b02df2808c6aad1fbb8932001e9",
+    "config/fr3_model.yaml": "baee2f3ebc393ac468e47a6265a7ff6717a342fde880f286b87850135a1c95db",
+    "config/identification.yaml": "0e3d5d99f480f84e7278aec9ac504066c123ea03823a5c4f7893c1dd9c138487"
+  }
+}

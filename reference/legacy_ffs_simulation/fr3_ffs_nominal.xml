@@ -1,0 +1,66 @@
+<mujoco model="franka_fr3">
+  <compiler angle="radian" meshdir="." autolimits="true" balanceinertia="true"/>
+  
+  <option timestep="0.001" gravity="0 0 -9.81" integrator="implicit" impratio="10">
+    <flag warmstart="enable"/>
+  </option>
+  
+  <default>
+    <joint damping="0" frictionloss="0"/>
+    <geom contype="0" conaffinity="0" group="1" rgba="0.8 0.8 0.8 1"/>
+  </default>
+  
+  <worldbody>
+    <light pos="0 0 3" dir="0 0 -1"/>
+    <!-- Base fixed to world -->
+    <body name="base" pos="0 0 0">
+      <geom type="cylinder" size="0.06 0.02" rgba="0.5 0.5 0.5 1"/>
+      <inertial pos="0 0 0" mass="0.1" diaginertia="0.001 0.001 0.001"/>
+      <body name="link1" pos="0.000000 -0.000000 0.333000" >
+        <joint name="joint1" type="hinge" pos="0 0 0" axis="0 0 1" range="-2.8973 2.8973" damping="0" armature="0" limited="true"/>
+        <inertial pos="0.000000 -0.018125 -0.038604" mass="2.927470" fullinertia="1.86026429e-02 1.81193732e-02 5.38826975e-03 1.29787757e-05 -1.14045204e-04 5.33335173e-05"/>
+        <geom type="cylinder" size="0.03 0.05" rgba="0.7 0.7 0.7 1"/>
+      <body name="link2" pos="0.000000 -0.000000 0.000000" quat="0.707107 -0.707107 -0.000000 -0.000000">
+        <joint name="joint2" type="hinge" pos="0 0 0" axis="0 0 1" range="-2.8973 2.8973" damping="0" armature="0" limited="true"/>
+        <inertial pos="0.003183 -0.074322 0.008815" mass="2.935540" fullinertia="2.54956121e-02 2.48871773e-02 4.54569557e-02 -4.91431725e-04 4.16035948e-03 -6.14813233e-03"/>
+        <geom type="cylinder" size="0.03 0.05" rgba="0.7 0.7 0.7 1"/>
+      <body name="link3" pos="0.000000 -0.316000 0.000000" quat="0.707107 0.707107 0.000000 0.000000">
+        <joint name="joint3" type="hinge" pos="0 0 0" axis="0 0 1" range="-2.8973 2.8973" damping="0" armature="0" limited="true"/>
+        <inertial pos="0.040702 -0.004820 -0.028973" mass="2.244900" fullinertia="2.21643834e-02 1.41375932e-02 1.52728966e-02 1.96458254e-03 -5.50330175e-03 -1.79049244e-03"/>
+        <geom type="cylinder" size="0.03 0.05" rgba="0.7 0.7 0.7 1"/>
+      <body name="link4" pos="0.082500 0.000000 0.000000" quat="0.707107 0.707107 0.000000 0.000000">
+        <joint name="joint4" type="hinge" pos="0 0 0" axis="0 0 1" range="-2.8973 2.8973" damping="0" armature="0" limited="true"/>
+        <inertial pos="-0.045910 0.063049 -0.008519" mass="2.615600" fullinertia="2.39426157e-02 2.31791884e-02 2.53444320e-02 5.65488511e-03 1.11739584e-02 -2.38085021e-03"/>
+        <geom type="cylinder" size="0.03 0.05" rgba="0.7 0.7 0.7 1"/>
+      <body name="link5" pos="-0.082500 0.384000 0.000000" quat="0.707107 -0.707107 -0.000000 -0.000000">
+        <joint name="joint5" type="hinge" pos="0 0 0" axis="0 0 1" range="-2.8973 2.8973" damping="0" armature="0" limited="true"/>
+        <inertial pos="-0.001604 0.029254 -0.097297" mass="2.327120" fullinertia="2.75885331e-02 2.58410325e-02 1.44265260e-02 -5.82419493e-03 -3.20382093e-03 4.05037462e-03"/>
+        <geom type="cylinder" size="0.03 0.05" rgba="0.7 0.7 0.7 1"/>
+      <body name="link6" pos="0.000000 0.000000 0.000000" quat="0.707107 0.707107 0.000000 0.000000">
+        <joint name="joint6" type="hinge" pos="0 0 0" axis="0 0 1" range="-2.8973 2.8973" damping="0" armature="0" limited="true"/>
+        <inertial pos="0.059713 -0.041030 -0.010169" mass="1.817040" fullinertia="2.16525018e-03 7.39115491e-03 6.54322225e-03 1.74125448e-03 3.18619853e-04 -5.55855879e-04"/>
+        <geom type="cylinder" size="0.03 0.05" rgba="0.7 0.7 0.7 1"/>
+      <body name="link7" pos="0.088000 0.000000 0.000000" quat="0.707107 0.707107 0.000000 0.000000">
+        <joint name="joint7" type="hinge" pos="0 0 0" axis="0 0 1" range="-2.8973 2.8973" damping="0" armature="0" limited="true"/>
+        <inertial pos="0.004523 0.008626 -0.016163" mass="0.627143" fullinertia="1.00000000e-03 1.00000000e-03 1.00000000e-03 1.40345673e-19 -1.72298635e-19 -1.17627203e-19"/>
+        <geom type="cylinder" size="0.03 0.05" rgba="0.7 0.7 0.7 1"/>
+      </body>
+      </body>
+      </body>
+      </body>
+      </body>
+      </body>
+      </body>
+    </body>
+  </worldbody>
+  
+  <actuator>
+    <motor name="motor1" joint="joint1" gear="1" ctrllimited="false"/>
+    <motor name="motor2" joint="joint2" gear="1" ctrllimited="false"/>
+    <motor name="motor3" joint="joint3" gear="1" ctrllimited="false"/>
+    <motor name="motor4" joint="joint4" gear="1" ctrllimited="false"/>
+    <motor name="motor5" joint="joint5" gear="1" ctrllimited="false"/>
+    <motor name="motor6" joint="joint6" gear="1" ctrllimited="false"/>
+    <motor name="motor7" joint="joint7" gear="1" ctrllimited="false"/>
+  </actuator>
+</mujoco>
