@@ -8,7 +8,7 @@
 
 ## 原始数据下载与解压
 
-**raw 数据下载链接：待补充（数据正在上传）。**
+**raw 数据下载链接：[ScienceDB 数据集（DOI: 10.57760/sciencedb.018e2）](https://doi.org/10.57760/sciencedb.018e2)。**
 
 1. 克隆或下载本仓库，并进入 `franka_7link_dynamics_id` 项目根目录。
 2. 从上述数据网站下载 raw 压缩包，将其解压到项目的 **`data/` 目录**，使压缩包中的 `raw/` 文件夹位于 `data/raw/`。

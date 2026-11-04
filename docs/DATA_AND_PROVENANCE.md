@@ -4,7 +4,7 @@
 
 ## GitHub 与独立数据包
 
-GitHub 只发布代码、轨迹 JSON、清单和复现材料，不包含 `data/raw/` 或 `data/processed/`。raw 压缩包的下载位置及解压步骤见 [README](../README.md#原始数据下载与解压)，下载链接将在数据上传完成后补充。将压缩包解压到项目 `data/` 目录，最终得到 `data/raw/{train,test,unassigned}/`。processed 由预处理命令或流水线自动生成。
+GitHub 只发布代码、轨迹 JSON、清单和复现材料，不包含 `data/raw/` 或 `data/processed/`。raw 压缩包从 [ScienceDB 数据集（DOI: 10.57760/sciencedb.018e2）](https://doi.org/10.57760/sciencedb.018e2) 下载，解压步骤见 [README](../README.md#原始数据下载与解压)。将压缩包解压到项目 `data/` 目录，最终得到 `data/raw/{train,test,unassigned}/`。processed 由预处理命令或流水线自动生成。
 
 下面的数量和样本数描述原始归档快照；接收的数据包是否齐全，以 `data/MANIFEST.csv` 的存在性、大小和哈希校验为准。
 
